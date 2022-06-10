@@ -20,8 +20,8 @@ from generator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/', views.about),
-    path('', views.home),
+    path('about/', views.about, name="about"),
+    path('', views.home, name="home"),
     path('generate-password', views.password, name='password'), # En el formulario, se especifica en nombre como si fuera un ID
     # Esto es por si se quiere cambiar la url, no tener que cambiarla en todos los lados donde apunte
 ]
