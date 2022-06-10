@@ -1,0 +1,29 @@
+<form action="{% url 'password' %}">
+    <h1>Password Generator</h1>
+    <label for="lenght">Select Lenght Password</label> 
+    <!-- El for lenght es para el id lenght-->
+    <select name="lenght" id="lenght">
+        <option value="5">5 Characters</option>
+        <!-- Emmet option{$ characters}*7 -->
+        <option value="6">6 characters</option> 
+        <option value="7">7 characters</option>
+        <option value="8">8 characters</option>
+        <option value="9">9 characters</option>
+        <option value="10">10 characters</option>
+        <option value="11">11 characters</option>
+        <option value="12">12 characters</option>
+    </select>
+
+    <label for="uppercase">Uppercase</label>
+    <input type="checkbox" name="uppercase" id="uppercase">
+
+    <label for="special">Special Characters</label>
+    <input type="checkbox" name="special" id="special">
+
+    <label for="numbers">Numbers</label>
+    <input type="checkbox" name="numbers" id="numbers">
+
+    <button>Generate Password</button>
+    <!-- Esto hace una peticion GET al servidor -->
+    <!-- Yo quiero que envie la info a una url nueva -->
+</form>

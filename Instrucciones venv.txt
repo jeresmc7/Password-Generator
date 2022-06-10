@@ -1,0 +1,36 @@
+Instalar VirtualEnv
+	pip install virtualenv
+Creamos entorno virual en la carpeta creada
+	python -m virtualenv venv
+Activar VirtualEnv
+	activate (deberia andar y no me anda)
+	CREO que para que ande hay que ir desde la consola a Scripts\activate
+En la carpeta del proyecto instalo Django (se instala solo para ese proy)
+	pip install django
+Lista de comandos de Django
+	django-admin
+Creamos un proyecto Django [nombre de carpeta, el punto sigifica "crealo en la carpeta donde estas parado"]
+	django-admin startproject django_password_generator .
+Abrir proyecto desde la carpeta (no me anduvo)
+	code .
+Si esto no anda, en VisualStudio ir con F1 y escribir select interpreter
+Luego seleccionar Python venv
+Abrir terminal con F1 create new terminal
+
+manage.py es un archivo que ejecuta el proyecto y a agregar features
+settings.py archivo de configuracion (middlewares, databases, etc)
+
+para iniciarlo, en la terminal ponemos
+	python manage.py runserver
+si no encuentra django, instalarlo ahi con pip install django
+una vez corrido runserver, ya tenemos andando la app en LocalHost
+
+se puede tener separadas las app
+	python manage.py startapp generator
+Luego dentro de la carpeta generator se separa todo lo relacionado a esa app
+En la seccion urls, tenemos una url admin, que sirve como dios para modificar cosas dentro de las apps
+
+
+
+
+
